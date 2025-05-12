@@ -10,6 +10,9 @@ import Footer from './components/Footer';
 import Sacs from './pages/Sacs';
 import Bijoux from './pages/Bijoux';
 import Vetements from './pages/Vetements';
+import Nouveautes from './pages/Nouveautes';
+import Compte from './pages/Compte';
+import Boutiques from './pages/Boutiques';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
             <Route path="/sacs" element={<Sacs />} />
             <Route path="/bijoux" element={<Bijoux />} />
             <Route path="/vetements" element={<Vetements />} />
+            <Route path="/nouveautes" element={<Nouveautes />} />
+            <Route path="/compte" element={<Compte />} />
+            <Route path="/boutiques" element={<Boutiques />} />
           </Routes>
         </main>
         <Footer />
