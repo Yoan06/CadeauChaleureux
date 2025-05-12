@@ -1,0 +1,211 @@
+.home-polene-bg {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: #222;
+}
+
+.home-polene-main-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-polene-product-card {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  z-index: 2;
+  max-width: 340px;
+  min-width: 260px;
+}
+
+.categories-overlay {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.category-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.category-section:hover {
+  transform: translateY(-10px);
+}
+
+.category-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.category-section p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../assets/images/ppp.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+  z-index: 1;
+}
+
+.hero-overlay-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-bag-img {
+  width: 220px;
+  max-width: 90vw;
+  height: auto;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #3a2e1a;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.categories-fullwidth-row {
+  display: flex;
+  width: 100vw;
+  min-height: 340px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.category-card {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 340px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 0.5px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.category-card-label {
+  width: 100%;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.2rem 0 1.2rem 2rem;
+  letter-spacing: 0.04em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: left;
+}
+
+.category-card:hover {
+  transform: scale(1.03);
+  z-index: 3;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.sacs-card {
+  background-image: url('../assets/images/ppp.png');
+}
+.bijoux-card {
+  background-image: url('../assets/images/bijoux.jpg'); /* Remplace par ton image */
+}
+.vetements-card {
+  background-image: url('../assets/images/vetements.jpg'); /* Remplace par ton image */
+}
+
+@media (max-width: 900px) {
+  .home-polene-product-card {
+    left: 10px;
+    top: 60px;
+    max-width: 90vw;
+  }
+  
+  .categories-overlay {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-section {
+    margin: 1rem 0;
+    width: 90%;
+  }
+  .hero-section {
+    min-height: 60vh;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-position: center 30%;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  .hero-bag-img {
+    width: 140px;
+  }
+  .categories-fullwidth-row {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .category-card {
+    height: 180px;
+    margin: 0 0 8px 0;
+  }
+  .category-card-label {
+    font-size: 1.1rem;
+    padding: 0.7rem 0 0.7rem 1rem;
+  }
+} 

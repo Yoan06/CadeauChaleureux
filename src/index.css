@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Styles pour les placeholders d'images */
+.placeholder-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* Styles pour les cartes de produits */
+.card {
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Styles pour les boutons */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Styles pour la navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Styles pour le footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Styles pour les sections */
+section {
+  padding: 4rem 0;
+}
+
+/* Styles pour les titres */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Styles pour les formulaires */
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Styles pour les alertes */
+.alert {
+  border-radius: 4px;
+  border: none;
+}
+
+/* Styles pour les images de l'équipe */
+.team-member img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Styles pour les cartes de produits */
+.product-card {
+  height: 100%;
+}
+
+.product-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Styles pour la section héro */
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 6rem 0;
+}
+
+/* Styles pour la section newsletter */
+.newsletter-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+/* Styles pour les icônes */
+.icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* Styles pour les animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

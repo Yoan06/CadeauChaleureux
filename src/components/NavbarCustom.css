@@ -1,0 +1,41 @@
+.navbar-polene {
+  padding: 1.5rem 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.navbar-polene .nav-link {
+  color: #000;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-polene .nav-link:hover {
+  color: #666;
+}
+
+.polene-logo {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #000;
+}
+
+.icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .navbar-polene {
+    padding: 1rem 0;
+  }
+  
+  .polene-logo {
+    font-size: 1.5rem;
+  }
+} 
