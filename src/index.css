@@ -1,5 +1,8 @@
-body {
+html, body, #root {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  background: #fff;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #333;
   -webkit-font-smoothing: antialiased;

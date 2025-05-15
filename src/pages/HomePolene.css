@@ -3,6 +3,8 @@
   width: 100vw;
   position: relative;
   background: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .home-polene-main-img {
@@ -313,6 +315,10 @@
   h1, .hero-title {
     font-size: 1.2rem !important;
   }
+  .marquee-bar {
+    font-size: 0.95rem;
+    height: 30px;
+  }
 }
 
 /* Pour les pages de contenu (cartes, titres, etc.) */
@@ -355,13 +361,43 @@
 
 .home-carousel {
   width: 100vw;
+  height: 100vh;
   max-width: 100vw;
-  margin-bottom: 0;
+  margin: 0;
   position: relative;
   z-index: 2;
 }
 .home-carousel-img {
   width: 100vw;
-  max-height: 420px;
+  height: 100vh;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.marquee-bar {
+  width: 100vw;
+  background: #b7db97;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 38px;
+  display: flex;
+  align-items: center;
+}
+.marquee-content {
+  display: inline-block;
+  padding-left: 100vw;
+  animation: marquee-scroll 15s linear infinite;
+}
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100vw); }
 } 
